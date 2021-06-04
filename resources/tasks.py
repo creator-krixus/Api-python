@@ -10,7 +10,7 @@ tasks_bp = Blueprint('routes-tasks', __name__)
 
 @tasks_bp.route('/')
 def welcome():
-    return "Mi primera API"
+    return "Api creada para gestionar tareas por realizar futuramente le crearemos la interfaz de usuario"
 
 @tasks_bp.route('/tasks', methods=['POST'])
 def add_task():
