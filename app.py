@@ -8,4 +8,4 @@ setup.create_tables()
 
 app.register_blueprint(tasks_bp)   
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=1, port=8000)

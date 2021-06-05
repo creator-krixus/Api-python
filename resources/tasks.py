@@ -2,15 +2,15 @@ from flask import request
 from flask import jsonify
 from datetime import datetime
 from flask import Blueprint
+from flask import render_template
 
 from database import tasks
 
 tasks_bp = Blueprint('routes-tasks', __name__)
 
-
 @tasks_bp.route('/')
 def welcome():
-    return "Api creada para gestionar tareas por realizar, futuramente le crearemos la interfaz de usuario y hare la documentacion cion swagger"
+    return render_template('saludo.html')
 
 @tasks_bp.route('/tasks', methods=['POST'])
 def add_task():
